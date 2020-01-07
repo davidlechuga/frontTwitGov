@@ -3,13 +3,12 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 
 import './global.css';
-// import BadgeNew from './pages/badgeNew';
-import Badges from './pages/badges';
 
+import App from './components/App' 
 
 
 const container = document.getElementById('app');
 
 ReactDOM.render(
-    <Badges></Badges>
+    <App   />
     , container);

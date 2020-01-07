@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component,Fragment } from 'react'
 
 class Badgeform extends Component {
+    
     //INICIALIZAMOS ESTADO y HACEMOS LEVANTAMIENTO DEL ESTADO.
     // state = {
     //     // firstName: '',
@@ -10,16 +11,16 @@ class Badgeform extends Component {
     //     // project:'',
     // }
 
-handleChange = e => {
-    //     console.log({
-    //         name: e.target.name,
-    //         value: e.target.value
-    //     });
-    //     this.setState({
-    //     // las llaves es para que cambie el estado del input correspondiente.
-    //    [e.target.name] : e.target.value
-    //     })
-}
+// handleChange = e => {
+//     //     console.log({
+//     //         name: e.target.name,
+//     //         value: e.target.value
+//     //     });
+//     //     this.setState({
+//     //     // las llaves es para que cambie el estado del input correspondiente.
+//     //    [e.target.name] : e.target.value
+//     //     })
+// }
 
 handleClick = e => {
 console.log("button was click");
@@ -35,7 +36,7 @@ console.log(" I have already sent the form.");
 
 render() {
 return (
-    <div>
+    <Fragment>
         <h1> Web Development Services </h1>
         
         <form onSubmit={this.handleSubmit}>
@@ -106,7 +107,7 @@ return (
             </button>    
 
         </form>  
-    </div>
+    </Fragment>
     )
     }
 }

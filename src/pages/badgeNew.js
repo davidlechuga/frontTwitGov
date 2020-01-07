@@ -1,7 +1,6 @@
 import React, { Component,Fragment } from 'react';
 
 
-import Navbar from '../components/Navbar';
 import BadgeForm from '../components/BadgeForm'
 import Calendari from '../components/Calendari'
 import Badge from '../components/Badge'
@@ -32,13 +31,13 @@ class badgeNew extends Component {
     render() {
         return (
             <Fragment>
-                <Navbar />
+                
                 <div className="container">
                     <div className="row">
-                        <div className="col-6">
+                        <div className="col-12 col-sm-12 col-md-6 col-lg-6">
                             <Calendari />
                         </div>                            
-                        <div className="col-6">
+                        <div className="col-12 col-sm-12 col-md-6 col-lg-6">
                             <BadgeForm
                                 onChange={this.handleChange}
                                 formValues={this.state.form}
@@ -47,7 +46,7 @@ class badgeNew extends Component {
                     </div>
 
                     <div className="row">
-                        <div className="col-12">
+                        <div className="col-12 col-sm-12 col-md-6 col-lg-6">
                             <Badge
                                 firstName={this.state.form.firstName}
                                 lastName={this.state.form.lastName}
@@ -56,6 +55,7 @@ class badgeNew extends Component {
                                 project={this.state.form.project}
                             />
                             <Video
+                                
                             />
                         </div>
                     </div>      

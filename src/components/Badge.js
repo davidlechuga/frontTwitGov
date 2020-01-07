@@ -31,7 +31,7 @@ class Badge extends React.Component {
           <h5> {this.props.email} </h5>
         </div>
 
-        <div className="Badge__footer"> {this.props.project} </div>
+        <div className="Badge__footer row"> {this.props.project} </div>
       
         </div>
         

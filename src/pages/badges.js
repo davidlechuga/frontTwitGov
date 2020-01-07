@@ -1,6 +1,6 @@
 import React, { Component,Fragment } from 'react'
-import Navbar from '../components/Navbar'
 import './styles/Badges.css'
+import {Link } from 'react-router-dom'
 
 import BadgesList from '../components/BadgeList'
 import DB from '../data.json'
@@ -11,7 +11,7 @@ import DB from '../data.json'
 class Badges extends Component {
 
     state = {
-        datos: [DB.datos]
+        datos: DB.datos
     }
     
 
@@ -19,9 +19,7 @@ class Badges extends Component {
         return (
             <Fragment>
 
-                <Navbar
                 
-                />
 
                 <div className="Badges">
                     <div className="Badges__heroo">
@@ -33,12 +31,12 @@ class Badges extends Component {
 
                 <div className="Badge__container">
                     <div className="Badges__buttons">
-                        <a href="/badges/new" className="btn btn-primary"> NEW BADGE</a>
+                        <Link to="/" className="btn btn-primary"> NEW BADGE</Link>
                     </div>
                 </div>
 
                 <div className="Badges__list">
-                    <div className="Badges__container">
+                    <div className="BadgesList__container">
                         <BadgesList datos={this.state.datos} />
                     </div>
                  </div>

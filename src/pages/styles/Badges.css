@@ -8,6 +8,34 @@
   height: 150px;
 }
 
+/*  SOME BADGESLIST STYLES IIN WRONG STYLESHEET.CSS  */
+.table_styles{
+  display: flex;
+  flex-flow: column;
+  text-align: start;
+}
+
+.rtthead{
+  justify-content: space-around;
+}
+.ctbody {
+  display: flex;
+  justify-content: space-around;
+}
+
+.BadgesList__container {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.grapho {
+  display: none;
+  justify-content: center;
+}
+
+/*  SOME BADGESLIST STYLES IIN WRONG STYLESHEET.CSS  */
+
+
 .title_one{
   color: #ffffff;
 }
@@ -24,6 +52,7 @@
   margin: 0 auto;
   padding: 0 1rem;
 }
+
 
 .Badges__buttons {
   display: flex;

@@ -39,7 +39,7 @@
     },
     {
       "cve_agee": "05",
-      "nom_agee": "Coahuila de Zaragoza",
+      "nom_agee": "Coahuila",
       "nom_abrev": "Coah.",
       "pob": "2748391",
       "pob_fem": "1384194",
@@ -138,7 +138,7 @@
     },
     {
       "cve_agee": "16",
-      "nom_agee": "Michoacán de Ocampo",
+      "nom_agee": "Michoacán",
       "nom_abrev": "Mich.",
       "pob": "4351037",
       "pob_fem": "2248928",
@@ -264,7 +264,7 @@
     },
     {
       "cve_agee": "30",
-      "nom_agee": "Veracruz de Ignacio de la Llave",
+      "nom_agee": "Veracruz",
       "nom_abrev": "Ver.",
       "pob": "7643194",
       "pob_fem": "3947515",

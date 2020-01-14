@@ -8,6 +8,7 @@ import Video from '../components/Video'
 
 class badgeNew extends Component {
 
+
     state = {
 
         form: {
@@ -29,15 +30,19 @@ class badgeNew extends Component {
     }
 
     render() {
+        const margen = {
+        marginTop: "50px"
+                       }
         return (
+            
             <Fragment>
                 
                 <div className="container">
                     <div className="row">
-                        <div className="col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div className="col-12 col-sm-12 col-md-6 col-lg-6" style={margen}>
                             <Calendari />
                         </div>                            
-                        <div className="col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div className="col-12 col-sm-12 col-md-6 col-lg-6" style={margen}>
                             <BadgeForm
                                 onChange={this.handleChange}
                                 formValues={this.state.form}
@@ -46,7 +51,7 @@ class badgeNew extends Component {
                     </div>
 
                     <div className="row">
-                        <div className="col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div className="col-12" style={margen}>
                             <Badge
                                 firstName={this.state.form.firstName}
                                 lastName={this.state.form.lastName}

@@ -26,11 +26,13 @@
 .BadgesList__container {
   width: 100%;
   padding: 0 1rem;
+  margin-top: 30px;
 }
 
 .grapho {
   display: none;
   justify-content: center;
+  margin-top: 100px;
 }
 
 /*  SOME BADGESLIST STYLES IIN WRONG STYLESHEET.CSS  */

@@ -3,7 +3,7 @@ import './styles/Badges.css'
 import {Link } from 'react-router-dom'
 
 import BadgesList from '../components/BadgeList'
-import DB from '../data.json'
+import DB from '../data.json.js'
 //import useInitialState from '../hooks/useInitialState';
 //const API = ' `https://rickandmortyapi.com/api/character/?page=${this.state.nextPage}`'
 
@@ -31,7 +31,7 @@ class Badges extends Component {
 
                 <div className="Badge__container">
                     <div className="Badges__buttons">
-                        <Link to="/" className="btn btn-primary"> NEW BADGE</Link>
+                        <Link to="/" className="btn btn-primary"> NEX PAGE ></Link>
                     </div>
                 </div>
 

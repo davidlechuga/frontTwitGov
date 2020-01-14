@@ -10,7 +10,7 @@ class Badge extends React.Component {
       
       return ( 
       <Fragment>
-      <div className="Badge">
+      <div className="Badge" >
         <div className="Badge__header">
           <img src={twitgov_logo} alt="Logo de la conferencia" className="twitgov_logo" />
         </div>

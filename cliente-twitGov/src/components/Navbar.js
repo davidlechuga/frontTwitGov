@@ -24,24 +24,29 @@ class Navbar extends Component {
                 <div className="Navbar">
                     <div className="container-fluid">
                         <nav className="navbar navbar-expand-lg navbar-light ">
-                            <Link className="navbar-brand"  to="/" > Navbar</Link>
                             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                                 <span className="navbar-toggler-icon"></span>
                             </button>
 
                             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-                                <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <ul className="navbar-nav mt-2 mt-lg-0">
                                 <li className="nav-item active">
-                                    <Link className="nav-link" to="/informacion">Home <span className="sr-only">(current)</span></Link>
+                                    <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to={"/asios"}>Link</Link>
+                                    <Link className="nav-link" to="/intereses">intereses</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link disabled" to={"/"}>Disabled</Link>
+                                    <Link className="nav-link" to="/muestra"> Muestras </Link>
+                                </li>
+                                 <li className="nav-item search-box">
+                                    <input type="text" name="" className="search-txt" placeholder="Type to search"/>
+                                        <a className="search-btn" href="/">
+                                        <i className="fas fa-search"></i>
+                                    </a>
                                 </li>
                                 </ul>
-                                <input type="search" placeholder="Buscar" id="Buscador" />
+                               
                             </div>
                         </nav>
                     </div>

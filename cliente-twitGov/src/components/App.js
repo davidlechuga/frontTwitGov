@@ -12,7 +12,7 @@ function App() {
             <Layout>
                 <Switch>
                     <Route exact path="/" component={BadgeNew} />
-                    <Route exact path="/informacion" component={Badges} />
+                    <Route exact path="/intereses" component={Badges} />
                 </Switch>
             </Layout>
         

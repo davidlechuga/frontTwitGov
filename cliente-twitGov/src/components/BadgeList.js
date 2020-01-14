@@ -1,5 +1,5 @@
 import React, { Component,Fragment } from 'react'
-import EstadosCharts from '../components/EstadosCharts'
+import EstadosCharts from './EstadosCharts'
 
 export default class BadgeList extends Component {
 

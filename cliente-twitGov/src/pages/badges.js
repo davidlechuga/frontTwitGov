@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 
 import BadgesList from '../components/BadgeList';
 import DB from '../data.json';
-//import useInitialState from '../hooks/useInitialState';
-//const API = ' `https://rickandmortyapi.com/api/character/?page=${this.state.nextPage}`'
+
 
 class Badges extends Component {
 	state = {
@@ -37,6 +36,7 @@ class Badges extends Component {
 						<BadgesList datos={this.state.datos} />
 					</div>
 				</div>
+
 			</Fragment>
 		);
 	}

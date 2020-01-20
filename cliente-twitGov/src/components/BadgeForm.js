@@ -1,4 +1,5 @@
-import React, { Component,Fragment } from 'react'
+import React, { Component, Fragment } from 'react'
+import {Link } from 'react-router-dom'
 
 class Badgeform extends Component {
 
@@ -89,14 +90,16 @@ class Badgeform extends Component {
                         />
                 </div>
                     
-                
-                <button
-                    type="submit"
-                    className="btn btn-primary"
-                    onClick={this.handleClick}
-                    > Save
-                </button>    
-
+                <div style={{textAlign:"center"}}>
+                <Link to={"/crear/usuario"}>
+                    <button 
+                        type="submit"
+                        className="btn btn-primary "
+                        onClick={this.handleClick}
+                    > Crea un Nuevo Usuario
+                    </button>    
+                </Link>
+                </div>
             </form>  
         </Fragment>
         )

@@ -39,8 +39,8 @@ class CrearCliente extends Component {
            className="col-8"
                 onSubmit={e => {
                     e.preventDefault();
-
                     const { nombre, apellidos, email, job, project } = this.state.cliente
+                    
                     // validar el error =  this.state.error
                     if (nombre === '' || apellidos === '' || email === '' || job === '' || project === '') {
                         this.setState({

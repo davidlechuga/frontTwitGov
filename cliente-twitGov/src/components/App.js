@@ -10,13 +10,14 @@ import CrearCliente from '../pages/CrearCliente'
 //COMPONENTES
 import EditarCliente from '../components/EditarCliente'
 
-
-
 //APOLLO CONFIG
 import { ApolloProvider } from 'react-apollo';
-import ApolloClient from 'apollo-boost';
+import ApolloClient, { InMemoryCache } from 'apollo-boost';
 const client = new ApolloClient({
     uri: "http://localhost:4004/graphql",
+    cache: new InMemoryCache({
+        addTypename:false
+    }),
     onError: ({ networkError, graphQLErrors }) => {
         console.log('graphQLErrors', graphQLErrors);
         console.log('networkError', networkError);

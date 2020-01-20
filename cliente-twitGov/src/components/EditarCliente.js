@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import { CLIENTE_QUERY } from '../queries';
 import { Query } from 'react-apollo';
-import CrearCliente from '../pages/CrearCliente.js'
+import FormularioEditarCliente from '../components/FormularioEditarCliente'
 
 class EditarCliente extends Component {
 
@@ -35,14 +35,15 @@ class EditarCliente extends Component {
                     query={CLIENTE_QUERY}
                     variables={{ id }}
                     >
-                    {({ loading, error, data }) => {
+                    {({ loading, error, data, refetch }) => {
                         if (loading) return 'cargando...';
                         if (error) return `Error! ${error.message}`;
-                        // console.log(data);
+                        console.log(data);
                         return (
-                            <CrearCliente>
-
-                            </CrearCliente>
+                            <FormularioEditarCliente
+                                cliente={data.getCliente}
+                                refetch={refetch}
+                            />
                         )
                     }}
                 </Query>
